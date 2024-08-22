@@ -1,0 +1,27 @@
+:root {
+  --font-family: 'Mitr', sans-serif;
+  --second-family: 'Molengo', sans-serif;
+  --third-family: 'Paytone One', sans-serif;
+  --background-primary: #232438;
+  --background-tertiary: #2a2a44;
+  --background-secondary: #343a78;
+  --pop-up-purple-primary: #a0a9f8;
+  --pop-up-purple-secondary: #7756e9;
+  --pop-up-pink-primary: #d78af0;
+  --pop-up-pink-primary: #bb62d8;
+  --navigation-secondary: #7e80d0;
+  --navigation-green-primary: #3dffdd;
+  --navigation-green-secondary: #13bc9c;
+  --buttons-primary: #02bfff;
+  --buttons-secondary: #aa83ef;
+  --colors-red: #f74960;
+  --colors-yellow: #fcc641;
+  --colors-green: #9cbe33;
+  --colors-white: #d8d9e7;
+  --colors-pink: #eb54a5;
+  --colors-blue-primary: #356efd;
+  --colors-blue-secondary: #49a5fc;
+  --colors-purple-primary: #8366fe;
+  --colors-purple-secondary: #d0a2fd;
+  --color-black: #100f0d;
+}
