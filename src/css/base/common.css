@@ -6,8 +6,7 @@ body {
   font-family: var(--second-family);
   color: var(--colors-white);
   background: var(--background-primary);
-  min-width: 320px;
-  box-sizing: border-box;
+  line-height: 1.35;
 }
 
 h1,
@@ -39,7 +38,7 @@ img {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 48px;
-  line-height: 115%;
+  line-height: 1.15;
   text-align: center;
   color: var(--colors-white);
 }
@@ -48,7 +47,6 @@ img {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 32px;
-  line-height: 135%;
   text-align: center;
   color: var(--colors-white);
 }
@@ -57,7 +55,7 @@ img {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--pop-up-purple-primary);
 }
@@ -65,12 +63,11 @@ img {
 @media (min-width: 1440px) {
   .section-title {
     font-size: 64px;
-    line-height: 106%;
+    line-height: 1.06;
   }
 
   .section-title-description {
     font-size: 24px;
-    line-height: 135%;
   }
 }
 */ .button {
@@ -79,9 +76,9 @@ img {
   cursor: pointer;
 }
 
-.button:hover,
+/* .button:hover,
 .button:focus {
-}
+} */
 
 .hidden {
   position: absolute;
