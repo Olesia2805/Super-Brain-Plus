@@ -7,6 +7,7 @@ body {
   color: var(--colors-white);
   background: var(--background-primary);
   min-width: 320px;
+  box-sizing: border-box;
 }
 
 h1,
@@ -37,6 +38,15 @@ img {
 .section-title {
   font-family: var(--font-family);
   font-weight: 400;
+  font-size: 48px;
+  line-height: 115%;
+  text-align: center;
+  color: var(--colors-white);
+}
+
+.section-title-content {
+  font-family: var(--font-family);
+  font-weight: 400;
   font-size: 32px;
   line-height: 135%;
   text-align: center;
@@ -49,7 +59,6 @@ img {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--pop-up-purple-primary);
 }
 
