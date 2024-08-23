@@ -1,0 +1,104 @@
+.hero-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-container {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    padding: 0 72px;
+  }
+}
+
+.hero-icon {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1440px) {
+    width: 746px;
+    margin-bottom: 0;
+  }
+}
+
+.hero-title-thumb {
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    top: 140px;
+    left: 72px;
+  }
+}
+
+.hero-title {
+  font-family: 'Mitr', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.15;
+  text-align: right;
+  color: #d8d9e7;
+  margin-bottom: 16px;
+
+  & > span {
+    display: block;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 80px;
+    line-height: 1.06;
+    margin-bottom: 40px;
+
+    & > span {
+      display: inline;
+    }
+  }
+}
+
+.game-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 84px;
+  padding: 12px 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 8px 8px 16px 4px #111220;
+
+  & > div {
+    width: 100%;
+    height: 61px;
+    background-image: url(../../images/google-play-button-black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &:hover {
+    box-shadow: 0 0 80px 8px rgba(81, 97, 255, 0.7);
+    background-color: #100f0d;
+
+    & > div {
+      background-image: url(../../images/google-play-button-white.png);
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 80px 8px rgba(81, 97, 255, 0.7);
+    background-color: #343a78;
+
+    & > div {
+      background-image: url(../../images/google-play-button-white.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 306px;
+    height: 90px;
+
+    & > div {
+      height: 64px;
+    }
+  }
+}

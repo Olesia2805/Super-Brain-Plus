@@ -1,0 +1,77 @@
+.how-play-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.how-play-container {
+  @media screen and (min-width: 1440px) {
+    padding: 0 72px;
+  }
+}
+
+.how-play-section-title {
+  font-family: 'Mitr', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.35;
+  text-align: center;
+  color: #d8d9e7;
+  margin-bottom: 16px;
+}
+
+.rules-list {
+}
+
+.rules-item {
+  display: flex;
+  width: 100%;
+  position: relative;
+  text-align: right;
+
+  & > svg {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:nth-child(even) {
+    & > svg {
+      right: 0;
+      left: 200px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &:nth-child(even) {
+    text-align: left;
+
+    & > .rules-info {
+      margin-left: 0;
+    }
+  }
+}
+
+.rules-info {
+  font-family: 'Molengo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #d8d9e7;
+  width: 214px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  box-shadow: 8px 8px 16px 4px #111220;
+  background: #343a78;
+  margin-left: auto;
+}
