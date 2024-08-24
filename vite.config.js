@@ -52,7 +52,6 @@ export default defineConfig(({ command }) => {
           additionalData: globalStylesOptions,
         },
       },
-    },
-    base: '/vanilla-vite-template'
+    }
   };
 });
