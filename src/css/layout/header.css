@@ -24,6 +24,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .header-container {
+    backdrop-filter: blur(3px);
+    border-radius: 24px;
+  }
   .main-navigation {
     display: flex;
     align-items: center;
@@ -52,7 +56,7 @@
     width: 100%;
     height: 4px;
     background-color: var(--navigation-green-primary);
-    border-radius: 888px;
+    border-radius: 50%;
     opacity: 0;
     transition: opacity 250ms var(--animation-function);
   }
