@@ -61,7 +61,6 @@
     &:not(:first-child) {
       margin-top: 0;
     }
-  }
 }
 
 .benefits-icon {
