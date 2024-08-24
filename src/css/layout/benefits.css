@@ -57,7 +57,10 @@
     &:nth-child(even) {
       margin-left: 0;
     }
-  }
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
 }
 
 .benefits-icon {
