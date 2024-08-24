@@ -1,0 +1,48 @@
+.disclaimer-game-linlk {
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 140px;
+  height: 41px;
+  box-shadow: 4px 4px 7px 4px #111320;
+  background-size: 126px 30px;
+  padding: 6px 8px;
+
+  @media screen and (min-width: 1440px) {
+    width: 306px;
+    height: 90px;
+    padding: 14px 16px;
+    background-size: 273px 64px;
+  }
+}
+
+.disclaimer-title {
+  font-family: 'Mitr', sans-serif;
+  font-size: 32px;
+  line-height: 1.35;
+  text-align: center;
+  color: #d8d9e7;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+    line-height: 1.06;
+    margin-bottom: 24px;
+  }
+}
+
+.disclaimer-info {
+  font-family: 'Molengo', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #a0a9f8;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1440px) {
+    width: 856px;
+    margin: 0 auto 40px auto;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+  }
+}
