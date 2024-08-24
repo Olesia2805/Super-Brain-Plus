@@ -1,0 +1,173 @@
+.how-play-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.how-play-container {
+  @media screen and (min-width: 1440px) {
+    padding: 0 181px;
+  }
+}
+
+.how-play-section-title {
+  font-family: 'Mitr', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.35;
+  text-align: center;
+  color: #d8d9e7;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+    line-height: 1.06;
+    margin-bottom: 77px;
+  }
+}
+
+.rules-icon {
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  filter: drop-shadow(8px 16px 10px #111220);
+
+  @media screen and (min-width: 1440px) {
+    width: 160px;
+  }
+}
+
+.rules-item {
+  display: flex;
+  width: 100%;
+  position: relative;
+  text-align: right;
+
+  &:nth-child(odd) {
+    & > .rules-icon {
+      top: -25px;
+    }
+  }
+
+  &:nth-child(1) {
+    & > .rules-icon {
+      top: 10px;
+    }
+  }
+
+  &:nth-child(5),
+  &:nth-child(7) {
+    & > .rules-icon {
+      top: -30px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &:nth-child(even) {
+    text-align: left;
+
+    & > .rules-info {
+      margin-left: 0;
+      padding: 16px 29px 16px 16px;
+    }
+
+    & > .rules-icon {
+      right: 0;
+      left: 180px;
+      top: -20px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+
+    &:nth-child(even) {
+      & > .rules-info {
+        margin-left: 330px;
+        padding: 16px 120px 16px 24px;
+      }
+
+      & > .rules-icon {
+        left: auto;
+      }
+    }
+
+    &:nth-child(1) {
+      & > .rules-icon {
+        top: -55px;
+        left: 25px;
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(7) {
+      & > .rules-info {
+        margin-left: 220px;
+      }
+
+      & > .rules-icon {
+        left: 120px;
+      }
+    }
+
+    &:nth-child(3) {
+      & > .rules-icon {
+        top: -80px;
+      }
+    }
+
+    &:nth-child(4) {
+      & > .rules-info {
+        margin-left: 552px;
+      }
+
+      & > .rules-icon {
+        right: -72px;
+        top: 5px;
+      }
+    }
+
+    &:nth-child(2),
+    &:nth-child(6),
+    &:nth-child(8) {
+      & > .rules-icon {
+        top: -20px;
+        right: 150px;
+      }
+    }
+  }
+}
+
+.rules-info {
+  font-family: 'Molengo', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #d8d9e7;
+  width: 214px;
+  border-radius: 16px;
+  padding: 16px 16px 16px 29px;
+  box-shadow: 8px 8px 16px 4px #111220;
+  background-color: #343a78;
+  margin-left: auto;
+
+  @media screen and (min-width: 1440px) {
+    width: 514px;
+    font-size: 24px;
+    padding: 16px 24px 16px 120px;
+    margin-left: 109px;
+    line-height: 1.35;
+  }
+}
