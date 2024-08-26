@@ -1,5 +1,4 @@
 .sl-overlay {
-
   backdrop-filter: blur(0px);
   background: rgba(21, 22, 35, 0.5) !important;
   opacity: 1 !important;
@@ -15,18 +14,21 @@
   }
 }
 
+.sl-wrapper .sl-navigation {
+  display: none !important;
+
+  @media (min-width: 1440px) {
+    display: block !important;
+  }
+}
+
 .sl-wrapper .sl-navigation button {
-  color: transparent;
-
-  background-color: transparent;
-  width: 0;
-  height: 0;
-
   @media (min-width: 1440px) {
     display: flex !important;
     width: 86px !important;
     height: 86px !important;
     border-radius: 100% !important;
+    color: transparent !important;
   }
 }
 
@@ -59,7 +61,6 @@
     background-image: url(../../images/prev-button-focus.svg);
   }
 }
-
 
 /* .sl-wrapper {
   .sl-navigation {
@@ -117,4 +118,3 @@
     }
   }
 } */
-
