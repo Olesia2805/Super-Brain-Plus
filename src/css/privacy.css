@@ -4,3 +4,32 @@
 @import url(layout/header.css);
 @import url(layout/modal.css);
 @import url(layout/footer.css);
+
+.privacy-section > * {
+  margin: 48px 0;
+}
+.privacy-section-item {
+}
+.section-title {
+  margin-bottom: 16px;
+}
+.section-text {
+}
+.section-text-item {
+}
+.section-title-description {
+}
+.section-title-content {
+  margin-bottom: 16px;
+}
+.section-rights-item {
+}
+.rights-title {
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--pop-up-purple-primary);
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--navigation-green-primary);
+}
