@@ -46,7 +46,7 @@
     padding: 27px 0px;
   }
 
-  .nav-link:after {
+  .nav-link::after {
     content: '';
     position: absolute;
     left: 0;

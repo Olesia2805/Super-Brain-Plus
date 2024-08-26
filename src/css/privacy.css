@@ -5,24 +5,26 @@
 @import url(layout/modal.css);
 @import url(layout/footer.css);
 
-.privacy-section > * {
-  margin: 48px 0;
-}
 .privacy-section-item {
+  padding: 24px 0;
 }
 .section-title {
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
-.section-text {
+.section-text > :last-child {
+  margin: 0;
 }
 .section-text-item {
-}
-.section-title-description {
+  margin-bottom: 32px;
 }
 .section-title-content {
   margin-bottom: 16px;
 }
+.section-rights > :last-child {
+  margin-bottom: 0px;
+}
 .section-rights-item {
+  margin-bottom: 32px;
 }
 .rights-title {
   font-weight: 400;
@@ -32,4 +34,24 @@
   font-size: 20px;
   line-height: 1.3;
   color: var(--navigation-green-primary);
+}
+
+@media screen and (min-width: 1440px) {
+  .privacy-section {
+    max-width: 1076px;
+  }
+  .privacy-section > :first-child {
+    margin-top: 16px;
+  }
+  .section-title-content {
+    font-size: 48px;
+    line-height: 1.06;
+  }
+  .rights-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  .privacy-section > :last-child {
+    padding-bottom: 0px;
+  }
 }
