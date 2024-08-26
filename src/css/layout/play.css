@@ -15,12 +15,10 @@
 }
 
 .how-play-section-title {
-  font-family: 'Mitr', sans-serif;
-  font-weight: 400;
+  font-family: var(--title-font-family);
   font-size: 32px;
-  line-height: 1.35;
   text-align: center;
-  color: #d8d9e7;
+  color: var(--title-primary-color);
   margin-bottom: 16px;
 
   @media screen and (min-width: 1440px) {
@@ -150,17 +148,15 @@
 }
 
 .rules-info {
-  font-family: 'Molengo', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #d8d9e7;
+  color: var(--title-primary-color);
   width: 214px;
   border-radius: 16px;
   padding: 16px 16px 16px 29px;
-  box-shadow: 8px 8px 16px 4px #111220;
-  background-color: #343a78;
+  box-shadow: var(--box-shadow-main);
+  background-color: var(--background-secondary-color);
   margin-left: auto;
 
   @media screen and (min-width: 1440px) {

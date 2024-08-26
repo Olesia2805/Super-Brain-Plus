@@ -1,7 +1,8 @@
 .sl-overlay {
-  backdrop-filter: blur(20px);
-  background: rgba(21, 22, 35, 0.5);
-  opacity: 1;
+
+  backdrop-filter: blur(0px);
+  background: rgba(21, 22, 35, 0.5) !important;
+  opacity: 1 !important;
 }
 
 .sl-wrapper .sl-image img {
@@ -16,13 +17,16 @@
 
 .sl-wrapper .sl-navigation button {
   color: transparent;
-  display: none !important;
+
+  background-color: transparent;
+  width: 0;
+  height: 0;
 
   @media (min-width: 1440px) {
     display: flex !important;
-    width: 86px;
-    height: 86px;
-    border-radius: 100%;
+    width: 86px !important;
+    height: 86px !important;
+    border-radius: 100% !important;
   }
 }
 
@@ -55,3 +59,62 @@
     background-image: url(../../images/prev-button-focus.svg);
   }
 }
+
+
+/* .sl-wrapper {
+  .sl-navigation {
+    button {
+      display: none;
+
+      @media (min-width: 1440px) {
+        display: flex !important;
+        width: 86px !important;
+        height: 86px !important;
+        border-radius: 100%;
+      }
+
+      .sl-next {
+        background-image: url(../../images/next.svg) !important;
+        background-repeat: no-repeat;
+        margin-right: 350px;
+        transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+          background-image: url(../../images/next-button-hover.svg);
+        }
+
+        &:focus {
+          background-image: url(../../images/next-button-focus.svg);
+        }
+      }
+
+      .sl-prev {
+        background-image: url(../../images/prev.svg);
+        background-repeat: no-repeat;
+        margin-left: 350px;
+        transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+          background-image: url(../../images/prev-button-hover.svg);
+        }
+
+        &:focus {
+          background-image: url(../../images/prev-button-focus.svg);
+        }
+      }
+    }
+  }
+
+  .sl-image {
+    img {
+      border-radius: 24px !important;
+      box-shadow: 4px 4px 7px 4px #111320 !important;
+
+      @media (min-width: 1440px) {
+        border-radius: 55px !important;
+        box-shadow: 24px 40px 40px 4px #13131e !important;
+      }
+    }
+  }
+} */
+
