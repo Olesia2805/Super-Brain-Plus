@@ -4,9 +4,9 @@ html {
 
 body {
   font-family: var(--second-family);
-  color: var(--colors-white);
   background: var(--background-primary);
   line-height: 1.35;
+  color: var(--pop-up-purple-primary);
 }
 
 h1,
