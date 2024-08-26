@@ -5,15 +5,15 @@
 }
 
 .section {
-  padding: 0 24px;
+  padding: 24px 0;
 }
 
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 72px 0;
+    padding: 0 72px;
   }
   .section {
-    padding: 0 80px;
+    padding: 80px 0;
   }
 }
