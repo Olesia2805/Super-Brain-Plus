@@ -88,7 +88,7 @@
     padding: 20px 0;
   }
 
-  .nav-link:after {
+  .nav-link::after {
     content: '';
     position: absolute;
     left: 0;

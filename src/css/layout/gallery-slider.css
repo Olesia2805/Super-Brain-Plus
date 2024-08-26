@@ -1,5 +1,5 @@
 .sl-overlay {
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(20px);
   background: rgba(21, 22, 35, 0.5) !important;
   opacity: 1 !important;
 }
