@@ -1,0 +1,29 @@
+@media screen and (min-width: 1440px) {
+  .advantages-item {
+    box-shadow: 8px 8px 16px 4px #111220;
+    background: var(--background-secondary);
+    border-radius: 24px;
+    padding: 24px;
+  }
+  .row {
+    display: flex;
+    width: 1185px;
+    gap: 25px;
+    margin-bottom: 24px;
+  }
+  .top-row {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .bottom-row {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .advantages-uppercase {
+    color: var(--colors-white);
+  }
+  .special {
+    width: 194px;
+  }
+}
