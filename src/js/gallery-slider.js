@@ -1,5 +1,5 @@
 import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
+import 'simplelightbox/dist/simple-lightbox.css';
 import '../css/layout/gallery-slider.css';
 
 new SimpleLightbox('.gallery-list a', {

@@ -16,11 +16,10 @@
 }
 
 .disclaimer-title {
-  font-family: 'Mitr', sans-serif;
+  font-family: var(--title-font-family);
   font-size: 32px;
-  line-height: 1.35;
   text-align: center;
-  color: #d8d9e7;
+  color: var(--title-primary-color);
   margin-bottom: 16px;
 
   @media screen and (min-width: 1440px) {
@@ -31,12 +30,11 @@
 }
 
 .disclaimer-info {
-  font-family: 'Molengo', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #a0a9f8;
+  color: var(--content-text-color);
   margin-bottom: 16px;
 
   @media screen and (min-width: 1440px) {
