@@ -4,3 +4,53 @@
 @import url(layout/header.css);
 @import url(layout/modal.css);
 @import url(layout/footer.css);
+
+.section-title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.section-terms > :not(:first-child) {
+  padding: 24px 0;
+}
+.section-terms > :first-child {
+  padding-bottom: 24px;
+}
+.section-title > :not(:first-child) {
+  margin-bottom: 16px;
+}
+.section-terms-item {
+}
+/* .section-terms-item > :not(:first-child) {
+  padding: 24px 0;
+} */
+.section-title-description-list > :not(:last-child) {
+  margin-bottom: 32px;
+}
+.section-title-content {
+  margin-bottom: 16px;
+}
+.br {
+  display: block;
+  margin-bottom: 0em;
+}
+.welcome {
+  font-size: 20px;
+  text-align: center;
+  color: var(--navigation-green-primary);
+  margin: 16px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .body {
+  }
+  .container {
+  }
+  .section-title {
+  }
+  .section-title-content {
+    font-size: 48px;
+  }
+  .section-title-description {
+  }
+}
