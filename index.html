@@ -19,17 +19,14 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Super-Brain-Plus/assets/vendor-61ca6bed.js"></script>
-    <script type="module" crossorigin src="/Super-Brain-Plus/assets/main-f8650bcb.js"></script>
-    <link rel="stylesheet" href="/Super-Brain-Plus/assets/main-a89b0e38.css">
-    <link rel="stylesheet" href="/Super-Brain-Plus/assets/vendor-5b0493aa.css">
-    <link rel="stylesheet" href="/Super-Brain-Plus/assets/index-2cc35bd8.css">
+    <script type="module" crossorigin src="/Super-Brain-Plus/assets/main-6fcdeaa2.js"></script>
+    <link rel="stylesheet" href="/Super-Brain-Plus/assets/index-433d15e5.css">
   </head>
   <body class="body">
     <header class="header-section js-header">
   <div class="header-container">
     <div class="header-thumb">
-      <a aria-label="Index" class="logo" href="./index.html#home"
+      <a aria-label="Index" class="logo" href="./index.html"
         ><img
           class="logo-icon"
           srcset="/Super-Brain-Plus/assets/logo-@1x-4c650d20.png 1x, /Super-Brain-Plus/assets/logo-@2x-e8583ca2.png 2x"
@@ -41,65 +38,156 @@
         <ul class="site-nav">
           <li class="nav-item">
             <a
+              class="nav-link"
+              data-location="home"
+              href="./index.html"
               aria-label="Home"
-              class="nav-link current"
-              href="./index.html#home"
               >Home</a
             >
           </li>
           <li class="nav-item">
-            <a aria-label="FAQ" class="nav-link" href="./index.html#faq">FAQ</a>
+            <a
+              class="nav-link"
+              data-location="faq"
+              aria-label="FAQ"
+              href="./index.html#faq"
+              >FAQ</a
+            >
           </li>
           <li class="nav-item">
-            <a aria-label="Gallery" class="nav-link" href="./index.html#gallery"
+            <a
+              class="nav-link"
+              data-location="gallery"
+              aria-label="Gallery"
+              href="./index.html#gallery"
               >Gallery</a
             >
           </li>
           <li class="nav-item">
             <a
-              aria-label="Benefits"
               class="nav-link"
+              data-location="benefits"
+              aria-label="Benefits"
               href="./index.html#benefits"
               >Benefits</a
             >
           </li>
           <li class="nav-item">
             <a
-              aria-label="About the Game"
               class="nav-link"
+              data-location="about"
+              aria-label="About the Game"
               href="./index.html#about"
               >About the Game</a
             >
           </li>
           <li class="nav-item">
             <a
-              aria-label="How to Play"
               class="nav-link"
+              data-location="play"
+              aria-label="How to Play"
               href="./index.html#play"
               >How to Play</a
             >
           </li>
           <li class="nav-item">
             <a
-              aria-label="Advantages"
               class="nav-link"
+              data-location="advantages"
+              aria-label="Advantages"
               href="./index.html#advantages"
               >Advantages</a
             >
           </li>
         </ul>
       </nav>
-
       <button
+        class="mobile-menu-button"
+        data-action="mobile-menu-open"
         aria-label="Toggle Menu Button"
-        class="mobile-menu-button menu-toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
         <svg class="mobile-menu-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#burger"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#burger"></use>
         </svg>
       </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu-backdrop" data-id="mobile-menu">
+    <div class="mobile-menu">
+      <div class="mobile-menu-thumb">
+        <button
+          class="mobile-menu-close-btn"
+          data-action="mobile-menu-close"
+          type="button"
+        >
+          <svg class="close-icon">
+            <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="home"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="faq"
+                href="./index.html#faq"
+                >FAQ</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="gallery"
+                href="./index.html#gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="benefits"
+                href="./index.html#benefits"
+                >Benefits</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="about"
+                href="./index.html#about"
+                >About the Game</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="play"
+                href="./index.html#play"
+                >How to Play</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="advantages"
+                href="./index.html#advantages"
+                >Advantages</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
@@ -136,7 +224,7 @@
           <li class="faq-item" id="faq-block1">
             <h3 class="faq-number">How often are new games added?</h3>
             <svg class="faq-icon">
-              <use href="/Super-Brain-Plus/assets/line-d2def5fb.svg#line"></use>
+              <use href="./images/line.svg#line"></use>
             </svg>
             <p class="section-title-description faq">
               New games and puzzles are added monthly.
@@ -145,7 +233,7 @@
           <li class="faq-item" id="faq-block2">
             <h3 class="faq-number">How can I track my improvement?</h3>
             <svg class="faq-icon">
-              <use href="/Super-Brain-Plus/assets/line-d2def5fb.svg#line"></use>
+              <use href="./images/line.svg#line"></use>
             </svg>
             <p class="section-title-description faq">
               Use the built-in statistics feature to monitor your progress.
@@ -154,7 +242,7 @@
           <li class="faq-item" id="faq-block3">
             <h3 class="faq-number">Can I play without internet?</h3>
             <svg class="faq-icon">
-              <use href="/Super-Brain-Plus/assets/line-d2def5fb.svg#line"></use>
+              <use href="./images/line.svg#line"></use>
             </svg>
             <p class="section-title-description faq">
               Yes, most games are available offline.
@@ -165,7 +253,7 @@
           <li class="faq-item" id="faq-block4">
             <h3 class="faq-number">Are there any age restrictions?</h3>
             <svg class="faq-icon">
-              <use href="/Super-Brain-Plus/assets/line-d2def5fb.svg#line"></use>
+              <use href="./images/line.svg#line"></use>
             </svg>
             <p class="section-title-description faq">
               No, our games are designed for all ages.
@@ -174,7 +262,7 @@
           <li class="faq-item" id="faq-block5">
             <h3 class="faq-number">Is there a subscription fee?</h3>
             <svg class="faq-icon">
-              <use href="/Super-Brain-Plus/assets/line-d2def5fb.svg#line"></use>
+              <use href="./images/line.svg#line"></use>
             </svg>
             <p class="section-title-description faq">
               No, the game is free to play with optional in-app purchases.
@@ -183,7 +271,7 @@
           <li class="faq-item" id="faq-block6">
             <h3 class="faq-number">What if I find a game too difficult?</h3>
             <svg class="faq-icon">
-              <use href="/Super-Brain-Plus/assets/line-d2def5fb.svg#line"></use>
+              <use href="./images/line.svg#line"></use>
             </svg>
             <p class="section-title-description faq">
               You can adjust the difficulty settings or use hints available in
@@ -208,63 +296,53 @@
     </div>
     <ul class="gallery-list">
       <li class="gallery-item">
-        <a href="images/screens/screen-1.jpg">
-          <img
-            class="gallery-image"
-            srcset="/Super-Brain-Plus/assets/screen-1-daff405e.jpg 1x, /Super-Brain-Plus/assets/screen-1-@2x-e9ae685b.jpg 2x"
-            src="/Super-Brain-Plus/assets/screen-1-daff405e.jpg"
-            loading="lazy"
-            alt="game screen"
-          />
-        </a>
+        <img
+          class="gallery-image"
+          srcset="/Super-Brain-Plus/assets/screen-1-daff405e.jpg 1x, /Super-Brain-Plus/assets/screen-1-@2x-e9ae685b.jpg 2x"
+          src="/Super-Brain-Plus/assets/screen-1-daff405e.jpg"
+          loading="lazy"
+          alt="game screen"
+        />
       </li>
 
       <li class="gallery-item">
-        <a href="images/screens/screen-2.jpg">
-          <img
-            class="gallery-image"
-            srcset="/Super-Brain-Plus/assets/screen-2-b4a975b0.jpg 1x, /Super-Brain-Plus/assets/screen-2-@2x-bb1a87bc.jpg 2x"
-            src="/Super-Brain-Plus/assets/screen-2-b4a975b0.jpg"
-            loading="lazy"
-            alt="game screen"
-          />
-        </a>
+        <img
+          class="gallery-image"
+          srcset="/Super-Brain-Plus/assets/screen-2-b4a975b0.jpg 1x, /Super-Brain-Plus/assets/screen-2-@2x-bb1a87bc.jpg 2x"
+          src="/Super-Brain-Plus/assets/screen-2-b4a975b0.jpg"
+          loading="lazy"
+          alt="game screen"
+        />
       </li>
 
       <li class="gallery-item">
-        <a href="images/screens/screen-3.jpg">
-          <img
-            class="gallery-image"
-            srcset="/Super-Brain-Plus/assets/screen-3-5ea58d1f.jpg 1x, /Super-Brain-Plus/assets/screen-3-@2x-d15afd4f.jpg 2x"
-            src="/Super-Brain-Plus/assets/screen-3-5ea58d1f.jpg"
-            loading="lazy"
-            alt="game screen"
-          />
-        </a>
+        <img
+          class="gallery-image"
+          srcset="/Super-Brain-Plus/assets/screen-3-5ea58d1f.jpg 1x, /Super-Brain-Plus/assets/screen-3-@2x-d15afd4f.jpg 2x"
+          src="/Super-Brain-Plus/assets/screen-3-5ea58d1f.jpg"
+          loading="lazy"
+          alt="game screen"
+        />
       </li>
 
       <li class="gallery-item">
-        <a href="images/screens/screen-4.jpg">
-          <img
-            class="gallery-image"
-            srcset="/Super-Brain-Plus/assets/screen-4-5dacf65f.jpg 1x, /Super-Brain-Plus/assets/screen-4-@2x-ac3a78ad.jpg 2x"
-            src="/Super-Brain-Plus/assets/screen-4-5dacf65f.jpg"
-            loading="lazy"
-            alt="game screen"
-          />
-        </a>
+        <img
+          class="gallery-image"
+          srcset="/Super-Brain-Plus/assets/screen-4-5dacf65f.jpg 1x, /Super-Brain-Plus/assets/screen-4-@2x-ac3a78ad.jpg 2x"
+          src="/Super-Brain-Plus/assets/screen-4-5dacf65f.jpg"
+          loading="lazy"
+          alt="game screen"
+        />
       </li>
 
       <li class="gallery-item">
-        <a href="images/screens/screen-5.jpg">
-          <img
-            class="gallery-image"
-            srcset="/Super-Brain-Plus/assets/screen-5-a3326855.jpg 1x, /Super-Brain-Plus/assets/screen-5-@2x-5d1c0802.jpg 2x"
-            src="/Super-Brain-Plus/assets/screen-5-a3326855.jpg"
-            loading="lazy"
-            alt="game screen"
-          />
-        </a>
+        <img
+          class="gallery-image"
+          srcset="/Super-Brain-Plus/assets/screen-5-a3326855.jpg 1x, /Super-Brain-Plus/assets/screen-5-@2x-5d1c0802.jpg 2x"
+          src="/Super-Brain-Plus/assets/screen-5-a3326855.jpg"
+          loading="lazy"
+          alt="game screen"
+        />
       </li>
     </ul>
   </div>
@@ -276,7 +354,7 @@
     <ul class="benefits-list">
       <li class="benefits-item">
         <svg class="benefits-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#stars"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#stars"></use>
         </svg>
         <div class="benefits-info-thumb">
           <h3 class="benefits-title">4,8</h3>
@@ -285,7 +363,7 @@
       </li>
       <li class="benefits-item">
         <svg class="benefits-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#downloads"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#downloads"></use>
         </svg>
         <div class="benefits-info-thumb">
           <h3 class="benefits-title">50 000+</h3>
@@ -294,7 +372,7 @@
       </li>
       <li class="benefits-item">
         <svg class="benefits-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#reviews"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#reviews"></use>
         </svg>
         <div class="benefits-info-thumb">
           <h3 class="benefits-title">1 000+</h3>
@@ -303,7 +381,7 @@
       </li>
       <li class="benefits-item">
         <svg class="benefits-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#connect"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#connect"></use>
         </svg>
         <div class="benefits-info-thumb">
           <h3 class="benefits-title">Online /<br />Offline</h3>
@@ -329,25 +407,25 @@
         <ul class="aspects-list">
           <li class="aspects-item">
             <svg>
-              <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#star"></use>
+              <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#star"></use>
             </svg>
             <p class="aspects-name">Memory</p>
           </li>
           <li class="aspects-item">
             <svg>
-              <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#star"></use>
+              <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#star"></use>
             </svg>
             <p class="aspects-name">Problem-solving</p>
           </li>
           <li class="aspects-item">
             <svg>
-              <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#star"></use>
+              <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#star"></use>
             </svg>
             <p class="aspects-name">Attention</p>
           </li>
           <li class="aspects-item">
             <svg>
-              <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#star"></use>
+              <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#star"></use>
             </svg>
             <p class="aspects-name">Logical thinking</p>
           </li>
@@ -379,7 +457,7 @@
     <ul>
       <li class="rules-item">
         <svg class="rules-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#hand"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#hand"></use>
         </svg>
         <p class="rules-info">
           Choose a game category that interests you — memory, attention,
@@ -388,7 +466,7 @@
       </li>
       <li class="rules-item">
         <svg class="rules-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#puzzle"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#puzzle"></use>
         </svg>
         <p class="rules-info">
           Start with easier puzzles to understand basic mechanics
@@ -396,7 +474,7 @@
       </li>
       <li class="rules-item">
         <svg class="rules-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#lamp"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#lamp"></use>
         </svg>
         <p class="rules-info">
           Use in-game hints if you get stuck on a particular challenge
@@ -404,13 +482,13 @@
       </li>
       <li class="rules-item">
         <svg class="rules-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#replay"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#replay"></use>
         </svg>
         <p class="rules-info">Aim to improve your scores by replaying levels</p>
       </li>
       <li class="rules-item">
         <svg class="rules-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#medal"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#medal"></use>
         </svg>
         <p class="rules-info">
           Participate in daily challenges to earn extra points
@@ -418,7 +496,7 @@
       </li>
       <li class="rules-item">
         <svg class="rules-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#flash"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#flash"></use>
         </svg>
         <p class="rules-info">
           Track your progress through the game's analytics feature
@@ -426,13 +504,13 @@
       </li>
       <li class="rules-item">
         <svg class="rules-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#gear"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#gear"></use>
         </svg>
         <p class="rules-info">Adjust game difficulty as your skills improve</p>
       </li>
       <li class="rules-item">
         <svg class="rules-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#explorer"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#explorer"></use>
         </svg>
         <p class="rules-info">
           Explore new games added regularly to the collection to keep your brain
@@ -509,7 +587,7 @@
   </div>
 </section>
 
-      <section class="section">
+      <section class="disclaimer-section">
   <div class="container">
     <h2 class="disclaimer-title">Disclaimer</h2>
     <p class="disclaimer-info">
@@ -568,6 +646,11 @@
   </div>
 </footer>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>

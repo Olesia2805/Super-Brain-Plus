@@ -19,17 +19,14 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Super-Brain-Plus/assets/vendor-61ca6bed.js"></script>
-    <script type="module" crossorigin src="/Super-Brain-Plus/assets/main-f8650bcb.js"></script>
-    <link rel="stylesheet" href="/Super-Brain-Plus/assets/vendor-5b0493aa.css">
-    <link rel="stylesheet" href="/Super-Brain-Plus/assets/main-a89b0e38.css">
-    <link rel="stylesheet" href="/Super-Brain-Plus/assets/privacy-d73bd820.css">
+    <script type="module" crossorigin src="/Super-Brain-Plus/assets/main-6fcdeaa2.js"></script>
+    <link rel="stylesheet" href="/Super-Brain-Plus/assets/privacy-f66f6800.css">
   </head>
   <body class="body">
     <header class="header-section js-header">
   <div class="header-container">
     <div class="header-thumb">
-      <a aria-label="Index" class="logo" href="./index.html#home"
+      <a aria-label="Index" class="logo" href="./index.html"
         ><img
           class="logo-icon"
           srcset="/Super-Brain-Plus/assets/logo-@1x-4c650d20.png 1x, /Super-Brain-Plus/assets/logo-@2x-e8583ca2.png 2x"
@@ -41,65 +38,156 @@
         <ul class="site-nav">
           <li class="nav-item">
             <a
+              class="nav-link"
+              data-location="home"
+              href="./index.html"
               aria-label="Home"
-              class="nav-link current"
-              href="./index.html#home"
               >Home</a
             >
           </li>
           <li class="nav-item">
-            <a aria-label="FAQ" class="nav-link" href="./index.html#faq">FAQ</a>
+            <a
+              class="nav-link"
+              data-location="faq"
+              aria-label="FAQ"
+              href="./index.html#faq"
+              >FAQ</a
+            >
           </li>
           <li class="nav-item">
-            <a aria-label="Gallery" class="nav-link" href="./index.html#gallery"
+            <a
+              class="nav-link"
+              data-location="gallery"
+              aria-label="Gallery"
+              href="./index.html#gallery"
               >Gallery</a
             >
           </li>
           <li class="nav-item">
             <a
-              aria-label="Benefits"
               class="nav-link"
+              data-location="benefits"
+              aria-label="Benefits"
               href="./index.html#benefits"
               >Benefits</a
             >
           </li>
           <li class="nav-item">
             <a
-              aria-label="About the Game"
               class="nav-link"
+              data-location="about"
+              aria-label="About the Game"
               href="./index.html#about"
               >About the Game</a
             >
           </li>
           <li class="nav-item">
             <a
-              aria-label="How to Play"
               class="nav-link"
+              data-location="play"
+              aria-label="How to Play"
               href="./index.html#play"
               >How to Play</a
             >
           </li>
           <li class="nav-item">
             <a
-              aria-label="Advantages"
               class="nav-link"
+              data-location="advantages"
+              aria-label="Advantages"
               href="./index.html#advantages"
               >Advantages</a
             >
           </li>
         </ul>
       </nav>
-
       <button
+        class="mobile-menu-button"
+        data-action="mobile-menu-open"
         aria-label="Toggle Menu Button"
-        class="mobile-menu-button menu-toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
         <svg class="mobile-menu-icon">
-          <use href="/Super-Brain-Plus/assets/sprite-563f828d.svg#burger"></use>
+          <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#burger"></use>
         </svg>
       </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu-backdrop" data-id="mobile-menu">
+    <div class="mobile-menu">
+      <div class="mobile-menu-thumb">
+        <button
+          class="mobile-menu-close-btn"
+          data-action="mobile-menu-close"
+          type="button"
+        >
+          <svg class="close-icon">
+            <use href="/Super-Brain-Plus/assets/sprite-04bf1096.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="home"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="faq"
+                href="./index.html#faq"
+                >FAQ</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="gallery"
+                href="./index.html#gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="benefits"
+                href="./index.html#benefits"
+                >Benefits</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="about"
+                href="./index.html#about"
+                >About the Game</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="play"
+                href="./index.html#play"
+                >How to Play</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link"
+                data-location="advantages"
+                href="./index.html#advantages"
+                >Advantages</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
@@ -278,6 +366,12 @@
   </div>
 </footer>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
