@@ -1,7 +1,7 @@
 @media screen and (min-width: 1440px) {
   .section-title.adv {
     position: absolute;
-    margin-left: 330px;
+    margin-left: 270px;
   }
 
   .advantages-item {
@@ -17,17 +17,30 @@
     margin-bottom: 24px;
   }
   .adv-row.top-row {
+    width: 1184px;
     justify-content: flex-start;
     align-items: flex-end;
   }
   .adv-row.bottom-row {
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   .advantages-uppercase {
     color: var(--colors-white);
   }
-  .special {
+
+  .advantages-item {
+    width: 330px;
+    height: 176px;
+  }
+
+  #adv-block3 {
     width: 194px;
+    height: 300px;
+  }
+
+  #adv-block6 {
+    width: 195px;
+    height: 336px;
   }
 }
