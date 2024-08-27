@@ -9,21 +9,15 @@
   margin-top: 24px;
   margin-bottom: 16px;
 }
-
-.section-terms > :not(:first-child) {
+.terms-section > :not(:first-child) {
   padding: 24px 0;
 }
-.section-terms > :first-child {
+.terms-section > :first-child {
   padding-bottom: 24px;
 }
 .section-title > :not(:first-child) {
   margin-bottom: 16px;
 }
-.section-terms-item {
-}
-/* .section-terms-item > :not(:first-child) {
-  padding: 24px 0;
-} */
 .section-title-description-list > :not(:last-child) {
   margin-bottom: 32px;
 }
@@ -32,25 +26,43 @@
 }
 .br {
   display: block;
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 .welcome {
   font-size: 20px;
   text-align: center;
   color: var(--navigation-green-primary);
-  margin: 16px 0;
+  font-family: var(--font-family);
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.3;
 }
 
 @media screen and (min-width: 1440px) {
-  .body {
-  }
-  .container {
-  }
   .section-title {
+    font-size: 80px;
+    margin-bottom: 40px;
+  }
+  .terms-section-container {
+    max-width: 1250px;
+  }
+  .terms-section > :not(:first-child) {
+    padding: 40px 0;
+  }
+  .terms-section > :first-child {
+    padding-bottom: 40px;
   }
   .section-title-content {
     font-size: 48px;
+    margin-bottom: 24px;
   }
-  .section-title-description {
+  .section-title-description-special {
+    font-size: 24px;
+  }
+  .br.welcome {
+    display: inline;
+  }
+  .welcome {
+    font-size: 32px;
   }
 }

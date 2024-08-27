@@ -37,7 +37,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .privacy-section {
+  .privacy-section-container {
     max-width: 1076px;
   }
   .privacy-section > :first-child {
