@@ -38,9 +38,10 @@
     position: absolute;
     margin-left: 395px;
   }
-
   .faq-row {
     gap: 24px;
+    flex-direction: row;
+    margin-bottom: 16px;
   }
   .faq-row.top-row {
     width: 1220px;
@@ -60,6 +61,9 @@
   }
   .faq-number {
     font-size: 24px;
+  }
+  .faq-icon {
+    margin-bottom: 16px;
   }
 
   #faq-block1 {
