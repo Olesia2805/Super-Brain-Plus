@@ -56,7 +56,6 @@
     align-items: flex-end;
   }
   .faq-row.bottom-row {
-    /* width: 1116px; */
     justify-content: flex-end;
     align-items: flex-start;
   }
@@ -74,8 +73,6 @@
     margin-bottom: 10px;
   }
 
-  .faq-item > :nth-of-type() {
-  }
   #faq-block1 {
     width: 557px;
   }
