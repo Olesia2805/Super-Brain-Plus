@@ -23,7 +23,6 @@
     bodyScrollLock[scrollLockMethod](document.body);
 
     const closeMenu = event => {
-      console.log('keydown', event.code);
       if (event.code === 'Escape') {
         Refs.mobileMenuRef.classList.remove('show-mobile-menu');
         window.removeEventListener('keydown', closeMenu);
