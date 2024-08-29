@@ -24,7 +24,7 @@ const images = [
   },
   {
     id: '5',
-    src: '../images/screens/screen-5.jpg',
+    src: '../images/screens/screen-5.jpg',  
   },
 ];
 
@@ -95,6 +95,7 @@ const handleImageClick = event => {
     pagination: {
       el: '.swiper-pagination',
     },
+
   });
 
   const slider = document.querySelector('.slider-backdrop');
