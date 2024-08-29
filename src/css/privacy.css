@@ -2,7 +2,6 @@
 @import url(base/common.css);
 @import url(base/container.css);
 @import url(layout/header.css);
-@import url(layout/modal.css);
 @import url(layout/footer.css);
 
 .privacy-section-item {
