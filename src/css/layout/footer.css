@@ -95,6 +95,7 @@
 
 .link-pages-list > a {
   padding: 16px 0;
+  transition: color var(--hover-transition);
 
   &:hover,
   &:focus {
