@@ -1,3 +1,4 @@
+/* ? */
 .slider-backdrop {
   position: fixed;
   top: 0;
@@ -9,7 +10,7 @@
   align-items: center;
   z-index: 1000;
   backdrop-filter: blur(20px);
-  background: rgba(21, 22, 35, 0.5);
+  background: var(--modal-overlay-background);
 }
 
 .slider-container {
@@ -31,11 +32,11 @@
   display: block;
 
   border-radius: 55px;
-  box-shadow: 4px 4px 7px 4px #111320;
+  box-shadow: var(--box-shadow-gallery-mobile);
 
   @media (min-width: 1440px) {
     width: 360px;
-    box-shadow: 24px 40px 40px 4px #13131e;
+    box-shadow: var(--box-shadow-gallery-laptop);
   }
 }
 
@@ -110,7 +111,7 @@
 }
 
 .swiper-pagination-bullet {
-  background: #a0a9f8 !important;
+  background: var(--content-text-color) !important;
 }
 
 /* background-image: url(../../images/prev.svg);

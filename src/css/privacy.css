@@ -29,11 +29,11 @@
 .rights-title {
   font-weight: 400;
   letter-spacing: 0.02em;
-  color: var(--pop-up-purple-primary);
-  font-family: var(--font-family);
+  color: var(--content-text-color);
+  font-family: var(--title-font-family);
   font-size: 20px;
   line-height: 1.3;
-  color: var(--navigation-green-primary);
+  color: var(--subtitle-color);
 }
 
 @media screen and (min-width: 1440px) {

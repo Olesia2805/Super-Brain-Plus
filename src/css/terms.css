@@ -31,9 +31,8 @@
 .welcome {
   font-size: 20px;
   text-align: center;
-  color: var(--navigation-green-primary);
-  font-family: var(--font-family);
-  font-family: var(--font-family);
+  color: var(--subtitle-color);
+  font-family: var(--title-font-family);
   font-weight: 400;
   line-height: 1.3;
 }

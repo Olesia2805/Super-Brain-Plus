@@ -1,3 +1,5 @@
+/* ? */
+
 .hero-section {
   padding-top: 40px;
   /* padding-bottom: 40px; */
@@ -32,12 +34,12 @@
 }
 
 .hero-title {
-  font-family: 'Mitr', sans-serif;
+  font-family: var(--title-font-family);
   font-weight: 400;
   font-size: 48px;
   line-height: 1.15;
   text-align: right;
-  color: #d8d9e7;
+  color: var(--title-primary-color);
   margin-bottom: 16px;
 
   & > span {
@@ -64,7 +66,7 @@
   padding: 12px 15px;
   background-color: var(--button-primary-color);
   border-radius: 12px;
-  box-shadow: 8px 8px 16px 4px #111220;
+  box-shadow: var(--box-shadow-primary);
   background-image: url(../../images/google-play-button-black.png);
   background-repeat: no-repeat;
   background-size: 257px 61px;
@@ -85,7 +87,7 @@
 
     &:focus {
       box-shadow: 0 0 80px 8px rgba(81, 97, 255, 0.7);
-      background-color: #343a78;
+      background-color: var(--background-secondary-color);
       background-image: url(../../images/google-play-button-white.png);
     }
   }

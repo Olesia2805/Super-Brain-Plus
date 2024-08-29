@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --font-family: 'Mitr', sans-serif;
   --second-family: 'Molengo', sans-serif;
   --third-family: 'Paytone One', sans-serif;
@@ -24,7 +24,7 @@
   --colors-purple-primary: #8366fe;
   --colors-purple-secondary: #d0a2fd;
   --color-black: #100f0d;
-}
+} */
 
 :root {
   --title-font-family: 'Mitr', sans-serif;
@@ -40,6 +40,17 @@
   --content-text-color: #a0a9f8;
   --box-shadow-primary: 8px 8px 16px 4px #111220;
   --box-shadow-secondary: 8px 8px 16px 4px #141523;
-  --box-shadow-gallery: 24px 40px 40px 4px #13131e;
+  --box-shadow-gallery-mobile: 4px 4px 7px 4px #111320;
+  --box-shadow-gallery-laptop: 24px 40px 40px 4px #13131e;
+  --box-shadow-faq: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --link-shadow: 4px 4px 7px 4px #111320;
+  --box-gradient: linear-gradient(
+    90deg,
+    rgba(42, 42, 68, 0) 0%,
+    #4d56b2 30%,
+    #4d56b2 70%,
+    rgba(52, 58, 120, 0) 100%
+  );
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-block: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
