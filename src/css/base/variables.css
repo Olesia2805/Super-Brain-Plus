@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --font-family: 'Mitr', sans-serif;
   --second-family: 'Molengo', sans-serif;
   --third-family: 'Paytone One', sans-serif;
@@ -24,7 +24,7 @@
   --colors-purple-primary: #8366fe;
   --colors-purple-secondary: #d0a2fd;
   --color-black: #100f0d;
-} */
+}
 
 :root {
   --title-font-family: 'Mitr', sans-serif;

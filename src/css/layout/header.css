@@ -166,6 +166,7 @@
   display: block;
   animation-duration: 400ms;
   animation-name: slideinBottom;
+  z-index: 500;
 }
 
 @keyframes slideinBottom {
