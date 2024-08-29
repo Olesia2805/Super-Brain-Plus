@@ -67,8 +67,8 @@
   }
 
   .advantages-item {
-    box-shadow: var(--modal-overlay-background);
-    background: var(--background-secondary);
+    box-shadow: var(--box-shadow-primary);
+    background: var(--background-secondary-color);
     border-radius: 24px;
     padding: 24px;
     width: 306px;
