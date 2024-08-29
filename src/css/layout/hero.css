@@ -1,3 +1,62 @@
+@keyframes pulse {
+  /* 0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  } */
+
+  0% {
+    box-shadow: 0 0 40px 8px rgba(81, 97, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 40px 8px rgba(86, 98, 210, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 40px 8px rgba(16, 21, 67, 0.7);
+  }
+}
+
+@keyframes slide-in-center {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* @keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+
 .hero-section {
   padding-top: 40px;
   /* padding-bottom: 40px; */
@@ -24,10 +83,13 @@
 }
 
 .hero-title-thumb {
+  animation: slide-in-center 0.5s ease-out;
+
   @media screen and (min-width: 1440px) {
     position: absolute;
     top: 140px;
     left: 72px;
+    animation: slide-in-left 0.5s ease-out;
   }
 }
 
@@ -56,6 +118,7 @@
 }
 
 .game-link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +136,7 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
+    animation: none;
     box-shadow: 0 0 80px 8px rgba(81, 97, 255, 0.7);
     background-color: #100f0d;
     background-image: url(../../images/google-play-button-white.png);

@@ -69,6 +69,10 @@ const createSlider = id => {
 const screenItemRef = document.querySelector('.gallery-list');
 
 const handleImageClick = event => {
+  if (event.target.nodeName !== 'IMG') {
+    return;
+  }
+
   let currentImageId = event.target.attributes.data_id.value;
   const modal = createSlider(currentImageId);
 
@@ -107,24 +111,29 @@ const handleImageClick = event => {
 
   const slider = document.querySelector('.slider-backdrop');
   const sliderContainer = document.querySelector('.swiper-slide');
+  const isSliderOpen = slider.getAttribute('aria-expanded') === 'true' || false;
 
   const closeSlider = event => {
     if (event.code === 'Escape') {
       slider.remove();
+      bodyScrollLock.enableBodyScroll(document.body);
       window.removeEventListener('keydown', closeSlider);
     }
   };
 
-  window.addEventListener('keydown', closeSlider);
-
   const onBackdropClick = event => {
     if (event.target === event.currentTarget) {
       slider.remove();
+      bodyScrollLock.enableBodyScroll(document.body);
     }
   };
 
-  slider.addEventListener('click', onBackdropClick);
+  const scrollLockMethod = !isSliderOpen && 'disableBodyScroll';
+  bodyScrollLock[scrollLockMethod](document.body);
+
   sliderContainer.addEventListener('click', onBackdropClick);
+  slider.addEventListener('click', onBackdropClick);
+  window.addEventListener('keydown', closeSlider);
 };
 
 screenItemRef.addEventListener('click', handleImageClick);
