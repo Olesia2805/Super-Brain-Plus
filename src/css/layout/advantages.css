@@ -24,6 +24,22 @@
   color: #d8d9e7;
 }
 
+.advantages-item {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.advantages-item.slide-in-top {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.advantages-item.slide-in-bottom {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media screen and (min-width: 1440px) {
   .section-title.adv {
     position: absolute;

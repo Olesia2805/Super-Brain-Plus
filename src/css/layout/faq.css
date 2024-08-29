@@ -49,6 +49,22 @@
   text-align: center;
 }
 
+.faq-item {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.faq-item.slide-in-top {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.faq-item.slide-in-bottom {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media screen and (min-width: 1440px) {
   .section-title.faq {
     position: absolute;
