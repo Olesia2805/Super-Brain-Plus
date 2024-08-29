@@ -1,3 +1,9 @@
+import screen1 from '../images/screens/screen-1.jpg';
+import screen2 from '../images/screens/screen-2.jpg';
+import screen3 from '../images/screens/screen-3.jpg';
+import screen4 from '../images/screens/screen-4.jpg';
+import screen5 from '../images/screens/screen-5.jpg';
+
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -8,27 +14,29 @@ import 'swiper/css/pagination';
 const images = [
   {
     id: '1',
-    src: '../images/screens/screen-1.jpg',
+    src: screen1,
   },
   {
     id: '2',
-    src: '../images/screens/screen-2.jpg',
+    src: screen2,
   },
   {
     id: '3',
-    src: '../images/screens/screen-3.jpg',
+    src: screen3,
   },
   {
     id: '4',
-    src: '../images/screens/screen-4.jpg',
+    src: screen4,
   },
   {
     id: '5',
-    src: '../images/screens/screen-5.jpg',
+    src: screen5,
   },
 ];
 
 const createSlider = id => {
+  const currentImage = images.filter(image => image.id === id);
+  const currentImageSrc = currentImage[0].src;
   const filteredImages = images.filter(image => image.id !== id);
 
   return `
@@ -36,8 +44,8 @@ const createSlider = id => {
             <div class='slider-container'>
                 <div class="swiper">
                     <ul class ="gallery-wrapper swiper-wrapper">
-                        <li class='swiper-slide gallery-slide'>
-                            <img class='slider-image' src='../images/screens/screen-${id}.jpg'/>
+                        <li class='swiper-slide gallery-slide'>                        
+                            <img class='slider-image' src='${currentImageSrc}'/>
                         </li>
                         ${filteredImages
                           .map(
@@ -98,6 +106,7 @@ const handleImageClick = event => {
   });
 
   const slider = document.querySelector('.slider-backdrop');
+  const sliderContainer = document.querySelector('.swiper-slide');
 
   const closeSlider = event => {
     if (event.code === 'Escape') {
@@ -115,6 +124,7 @@ const handleImageClick = event => {
   };
 
   slider.addEventListener('click', onBackdropClick);
+  sliderContainer.addEventListener('click', onBackdropClick);
 };
 
 screenItemRef.addEventListener('click', handleImageClick);

@@ -27,7 +27,7 @@
 }
 
 .slider-image {
-  width: 240px;
+  width: 200px;
   /* height: 100%; */
   display: block;
 
@@ -104,6 +104,7 @@
 }
 
 .swiper-pagination {
+  /* bottom: 160px !important; */
   @media (min-width: 1440px) {
     display: none !important;
   }
@@ -111,7 +112,6 @@
 
 .swiper-pagination-bullet {
   background: #a0a9f8 !important;
-  bottom: 0;
 }
 
 /* background-image: url(../../images/prev.svg);
