@@ -8,23 +8,23 @@ import 'swiper/css/pagination';
 const images = [
   {
     id: '1',
-    src: './images/screens/screen-1.jpg',
+    src: '../images/screens/screen-1.jpg',
   },
   {
     id: '2',
-    src: './images/screens/screen-2.jpg',
+    src: '../images/screens/screen-2.jpg',
   },
   {
     id: '3',
-    src: './images/screens/screen-3.jpg',
+    src: '../images/screens/screen-3.jpg',
   },
   {
     id: '4',
-    src: './images/screens/screen-4.jpg',
+    src: '../images/screens/screen-4.jpg',
   },
   {
     id: '5',
-    src: './images/screens/screen-5.jpg',
+    src: '../images/screens/screen-5.jpg',
   },
 ];
 
@@ -37,7 +37,7 @@ const createSlider = id => {
                 <div class="swiper">
                     <ul class ="gallery-wrapper swiper-wrapper">
                         <li class='swiper-slide gallery-slide'>
-                            <img class='slider-image' src='./images/screens/screen-${id}.jpg'/>
+                            <img class='slider-image' src='../images/screens/screen-${id}.jpg'/>
                         </li>
                         ${filteredImages
                           .map(
@@ -51,6 +51,7 @@ const createSlider = id => {
                     </ul>      
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>   
+                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>    
@@ -89,6 +90,10 @@ const handleImageClick = event => {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
     },
   });
 
