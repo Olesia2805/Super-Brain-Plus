@@ -1,3 +1,5 @@
+/* ? */
+
 .how-play-section {
   padding-top: 80px;
 
@@ -204,6 +206,7 @@
   width: 214px;
   border-radius: 16px;
   padding: 16px 16px 16px 29px;
+  /* ? */
   box-shadow: var(--box-shadow-main);
   background-color: var(--background-secondary-color);
   margin-left: auto;

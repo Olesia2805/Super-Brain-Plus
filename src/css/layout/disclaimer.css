@@ -4,12 +4,12 @@
   padding-bottom: 16px;
 }
 
-.disclaimer-game-linlk {
+.disclaimer-game-link {
   margin: 0 auto;
   border-radius: 8px;
   width: 140px;
   height: 41px;
-  box-shadow: 4px 4px 7px 4px #111320;
+  box-shadow: var(--link-shadow);
   background-size: 126px 30px;
   padding: 6px 8px;
 

@@ -110,7 +110,6 @@ const handleImageClick = event => {
   });
 
   const slider = document.querySelector('.slider-backdrop');
-  const sliderContainer = document.querySelector('.swiper-slide');
   const isSliderOpen = slider.getAttribute('aria-expanded') === 'true' || false;
 
   const closeSlider = event => {
@@ -122,6 +121,7 @@ const handleImageClick = event => {
   };
 
   const onBackdropClick = event => {
+    console.log(event.target);
     if (event.target === event.currentTarget) {
       slider.remove();
       bodyScrollLock.enableBodyScroll(document.body);
@@ -131,7 +131,6 @@ const handleImageClick = event => {
   const scrollLockMethod = !isSliderOpen && 'disableBodyScroll';
   bodyScrollLock[scrollLockMethod](document.body);
 
-  sliderContainer.addEventListener('click', onBackdropClick);
   slider.addEventListener('click', onBackdropClick);
   window.addEventListener('keydown', closeSlider);
 };
