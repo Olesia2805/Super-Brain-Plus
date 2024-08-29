@@ -27,7 +27,6 @@
   margin-bottom: 32px;
 }
 .rights-title {
-  font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--content-text-color);
   font-family: var(--title-font-family);
