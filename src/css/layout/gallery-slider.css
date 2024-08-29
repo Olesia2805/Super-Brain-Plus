@@ -19,7 +19,6 @@
   align-items: center;
   justify-content: center;
   height: 90%;
-
   @media (min-width: 1440px) {
     width: 700px;
     height: 100%;
