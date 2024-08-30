@@ -121,7 +121,6 @@ const handleImageClick = event => {
   };
 
   const onBackdropClick = event => {
-    console.log(event.target);
     if (event.target === event.currentTarget) {
       slider.remove();
       bodyScrollLock.enableBodyScroll(document.body);
@@ -135,4 +134,6 @@ const handleImageClick = event => {
   window.addEventListener('keydown', closeSlider);
 };
 
-screenItemRef.addEventListener('click', handleImageClick);
+if (screenItemRef) {
+  screenItemRef.addEventListener('click', handleImageClick);
+}
