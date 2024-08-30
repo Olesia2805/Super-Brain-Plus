@@ -1,5 +1,3 @@
-/* ? */
-
 .gallery-section {
   background-image: radial-gradient(
     114.27% 45.13% at 95.25% 50.96%,
@@ -25,6 +23,7 @@
 .gallery-section-title {
   font-family: var(--title-font-family);
   font-size: 32px;
+  font-weight: 400;
   text-align: center;
   color: var(--title-primary-color);
   margin-bottom: 16px;
@@ -96,6 +95,13 @@
   position: absolute;
   transform: rotate(25deg);
   cursor: pointer;
+  border-radius: 8px;
+  transition: scale var(--hover-transition);
+
+  &:hover,
+  &:focus {
+    scale: 0.9;
+  }
 
   &:nth-child(1) {
     top: 57px;
@@ -155,6 +161,13 @@
   height: 133px;
   border-radius: 8px;
   box-shadow: var(--box-shadow-gallery-mobile);
+  transition: box-shadow var(--hover-transition);
+
+  &:hover,
+  &:focus {
+    box-shadow: 8px 8px 16px 4px #141523;
+    /* box-shadow: 8px 8px 16px 4px rgba(81, 97, 255, 0.7); */
+  }
 
   @media screen and (min-width: 1440px) {
     width: 248px;

@@ -49,6 +49,10 @@
 
 .swiper-wrapper {
   height: 90% !important;
+
+  @media (min-width: 1440px) {
+    height: 100% !important;
+  }
 }
 
 .swiper-slide {
