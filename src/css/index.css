@@ -2,7 +2,6 @@
 @import url(base/common.css);
 @import url(base/container.css);
 @import url(layout/header.css);
-@import url(layout/modal.css);
 @import url(layout/hero.css);
 @import url(layout/faq.css);
 @import url(layout/gallery.css);
@@ -12,5 +11,4 @@
 @import url(layout/advantages.css);
 @import url(layout/disclaimer.css);
 @import url(layout/footer.css);
-/* @import url(layout/scroll-button.css); */
 @import url(layout/gallery-slider.css);

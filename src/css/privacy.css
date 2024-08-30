@@ -2,7 +2,6 @@
 @import url(base/common.css);
 @import url(base/container.css);
 @import url(layout/header.css);
-@import url(layout/modal.css);
 @import url(layout/footer.css);
 
 .privacy-section-item {
@@ -27,7 +26,6 @@
   margin-bottom: 32px;
 }
 .rights-title {
-  font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--content-text-color);
   font-family: var(--title-font-family);
