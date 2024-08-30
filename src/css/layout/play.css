@@ -16,6 +16,7 @@
 .how-play-section-title {
   font-family: var(--title-font-family);
   font-size: 32px;
+  font-weight: 400;
   text-align: center;
   color: var(--title-primary-color);
   margin-bottom: 16px;
